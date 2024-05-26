@@ -145,7 +145,7 @@
  "links": [],
  "modified": "2024-05-03 13:18:08.326567",
  "modified_by": "Administrator",
- "module": "Frappe Whatsapp",
+ "module": "WhatsApp",
  "name": "WhatsApp Templates",
  "naming_rule": "By fieldname",
  "owner": "Administrator",

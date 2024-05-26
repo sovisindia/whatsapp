@@ -223,7 +223,7 @@ class WhatsAppNotification(Document):
     def after_insert(self):
         """After insert hook."""
         if self.notification_type == "Scheduler Event":
-            method = f"frappe_whatsapp.utils.trigger_whatsapp_notifications_{self.event_frequency.lower().replace(' ', '_')}" # noqa
+            method = f"whatsapp.utils.trigger_whatsapp_notifications_{self.event_frequency.lower().replace(' ', '_')}" # noqa
             job = frappe.get_doc(
                 {
                     "doctype": "Scheduled Job Type",
